@@ -1,7 +1,7 @@
 import DownloadLink from './DownloadLink.jsx';
 import EditorDemo from './EditorDemo.jsx';
 
-export default function HeroSection({ copy }) {
+export default function HeroSection({ copy, downloads, locale }) {
   const { hero } = copy;
 
   return (
@@ -11,7 +11,13 @@ export default function HeroSection({ copy }) {
           <h1>{hero.title}</h1>
           <p className="hero-description">{hero.description}</p>
           <div className="hero-action">
-            <DownloadLink>{hero.action}</DownloadLink>
+            <DownloadLink
+              downloads={downloads}
+              downloadCountLabel={copy.download.downloadCountLabel}
+              locale={locale}
+            >
+              {hero.action}
+            </DownloadLink>
             <span>{hero.note}</span>
           </div>
         </div>

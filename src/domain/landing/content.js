@@ -64,6 +64,7 @@ export const landingCopy = {
       description:
         'Repsel est open source. Le paquet .deb est prévu pour Debian, Ubuntu et leurs dérivés en 64 bits.',
       action: 'Télécharger le .deb',
+      downloadCountLabel: 'téléchargements',
     },
     footer: 'Repsel, éditeur Markdown open source.',
     repository: 'Code source sur GitHub',
@@ -148,6 +149,7 @@ $$
       title: 'Ready to write?',
       description: 'Repsel is open source. The .deb package is for 64-bit Debian, Ubuntu, and their derivatives.',
       action: 'Download the .deb',
+      downloadCountLabel: 'downloads',
     },
     footer: 'Repsel, an open-source Markdown editor.',
     repository: 'Source code on GitHub',
