@@ -1,5 +1,6 @@
 import DownloadSection from '../components/DownloadSection.jsx';
 import FeaturesSection from '../components/FeaturesSection.jsx';
+import GaiaSection from '../components/GaiaSection.jsx';
 import HeroSection from '../components/HeroSection.jsx';
 import SiteFooter from '../components/SiteFooter.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
@@ -17,6 +18,7 @@ export default function LandingPage({ locale, onLocaleChange }) {
         <HeroSection copy={copy} downloads={downloads} locale={locale} />
         <FeaturesSection copy={copy} />
         <DownloadSection copy={copy} />
+        <GaiaSection copy={copy} />
       </main>
       <SiteFooter />
     </div>
